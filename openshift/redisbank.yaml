@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redisbank
+  namespace: redis-apps
+data:
+  STOMP_HOST: redisbank-redis-apps.apps.uki-okd.demo.redislabs.com
+  STOMP_PROTOCOL: ws
+  STOMP_PORT: 80
+  STOMP_REDIS_HOST: bankdb.redis-apps.svc.cluster.local
+  STOMP_REDIS_PORT: 12869

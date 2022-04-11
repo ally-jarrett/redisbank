@@ -2,7 +2,7 @@ apiVersion: app.redislabs.com/v1alpha1
 kind: RedisEnterpriseDatabase
 metadata:
   name: bankdb
-  namespace: redis-ent-dev
+  namespace: redis-apps
 spec:
   modulesList:
     - name: search
