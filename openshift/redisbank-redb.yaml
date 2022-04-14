@@ -1,7 +1,7 @@
 apiVersion: app.redislabs.com/v1alpha1
 kind: RedisEnterpriseDatabase
 metadata:
-  name: bankdb
+  name: redisbank-redb
   namespace: redis-apps
 spec:
   modulesList:
@@ -14,5 +14,5 @@ spec:
   shardCount: 2
   shardsPlacement: dense
   databasePort: 12869
-  databaseSecretName: bankdb-pwd 
+  databaseSecretName: redisbank-auth
   memorySize: 1GB
